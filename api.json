@@ -1,0 +1,250 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "PM1AUTHEPCOS",
+      "description": "à¹ƒà¸«à¹‰à¸—à¸µà¸¡à¸—à¸”à¸ªà¸­à¸š Token à¸—à¸µà¹ˆà¸ˆà¸°à¸ªà¹ˆà¸‡à¹€à¸‚à¹‰à¸²à¸¡à¸²à¸ˆà¸²à¸ URL Query Parameter `token`\n\n**à¸—à¸”à¸ªà¸­à¸š à¸œà¹ˆà¸²à¸™ API**\n\n``` markdown\nDev: https://e1ysop9k9l.execute-api.ap-southeast-1.amazonaws.com/dev/single_sign_on\nProd: https://api-epcos.onefence.co/checktoken/single_sign_on\n\n ```\n\n**à¸—à¸”à¸ªà¸­à¸š à¸œà¹ˆà¸²à¸™ à¸«à¸™à¹‰à¸²à¹€à¸§à¹‡à¸šà¹„à¸Šà¸•à¹Œ**\n\n```\nProd Env\nexternal : https://epcos.thaigov.go.th/signin/external?token={{jwt_token}}\ninternal : https://epcos.thaigov.go.th/signin/internal?token={{jwt_token}}\nDEV Env\nexternal : https://main.d30r9nwjcxfyu7.amplifyapp.com/signin/external?token={{jwt_token}}\ninternal : https://main.d30r9nwjcxfyu7.amplifyapp.com/signin/internal?token={{jwt_token}}\n\n ```\n\n**Token à¸—à¸µà¹ˆà¹ƒà¸Šà¹‰à¸—à¸”à¸ªà¸­à¸š**\n\n```\nToken 1 PM1 Token\neyJraWQiOiJpYW0yS2V5SUQiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmaXJzdG5hbWUiOiJwbW9uZTEzIiwidXNlcl9pZCI6MTEyLCJzeXN0ZW1faWQiOnsiLTk5Ijp7InJvbGVzIjpbInVzZXIiXX19LCJhdmF0YXIiOiJodHRwczovLzEwLjIwMS4xMC43MTovSUFNMldlYi9GaWxlU2VydmxldD91c2VybmFtZT1wbW9uZTEzIiwiZXhwIjoxNzIyODUwMjYzNDcsImxhc3RuYW1lIjoicG1vbmUxMyJ9.q0v5JoG4RmVBWAY8zxMPq92tautey3p_o6g36n2595STS1I4H3Rxv3uHb97rChAngLhMzwCc0OO7k-Q4H4NSik961HskEDyaOw5ZZbVvXjKP-eANJxESx7gK1AjPvAHu8FhXm291tuK_KN47iykJ4Pc0jUL9QV5qE9ImihBiPoCD7XRDp1t4gAmcQ8lAbkMH8gAwAjL8o7PCtoIJ7WpX8tV7eHhMzrlezeAp4ec4am3pXkbxMfl04A7F90iRfn6LF8f_-NHFKkA9-VZU5GXGWVW5kHyyRQZExOqTgjayrQWt-YuOhIQE2HSXP1WDkDrAdfIbOQ-BcXu0zf1xxgWbzg\n==\nToken 2 Token has expired\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJwbW9uZTEzIiwidXNlcl9pZCI6MTEyLCJzeXN0ZW1faWQiOnsiLTk5Ijp7InJvbGVzIjpbInVzZXIiXX19LCJhdmF0YXIiOiJodHRwczovLzEwLjIwMS4xMC43MTovSUFNMldlYi9GaWxlU2VydmxldD91c2VybmFtZT1wbW9uZTEzIiwiZXhwIjoxNzI4OTc4NDU3LCJsYXN0bmFtZSI6InBtb25lMTMiLCJpYXQiOjE3Mjg5Nzg1MTZ9.SAFa_UM4aK-KNQ6bpXv4ToOzNhiZgVZsoJkGNP7e4wU\n==\nToken 3 Role Administrative\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJwbW9uZTEzIiwidXNlcl9pZCI6MTEyLCJzeXN0ZW1faWQiOnsiLTk5Ijp7InJvbGVzIjpbImFkbWluaXN0cmF0aXZlIl19fSwiYXZhdGFyIjoiaHR0cHM6Ly8xMC4yMDEuMTAuNzE6L0lBTTJXZWIvRmlsZVNlcnZsZXQ_dXNlcm5hbWU9cG1vbmUxMyIsImV4cCI6MTcyMjg1MDI2MzQ3LCJsYXN0bmFtZSI6InBtb25lMTMiLCJpYXQiOjE3Mjk0OTcyMTN9.s3H80z46TKClWPpDEkWzHo4rVKLef5VHK0OtStRpkyc\n==\nToken 4 Role Officer\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJwbW9uZTEzIiwidXNlcl9pZCI6MTEyLCJzeXN0ZW1faWQiOnsiLTk5Ijp7InJvbGVzIjpbIm9mZmljZXIiXX19LCJhdmF0YXIiOiJodHRwczovLzEwLjIwMS4xMC43MTovSUFNMldlYi9GaWxlU2VydmxldD91c2VybmFtZT1wbW9uZTEzIiwiZXhwIjoxNzIyODUwMjYzNDcsImxhc3RuYW1lIjoicG1vbmUxMyIsImlhdCI6MTcyOTQ5NjcyNn0.dHEIVkJBmhXBy4MeoEQoTnE6NdUBC00nBOSRViN--lE\n\n ```\n\n**à¸œà¸¥à¸à¸²à¸£à¸—à¸”à¸ªà¸­à¸š**\n\n```\nà¸§à¸´à¸”à¸µà¹‚à¸­à¸—à¸”à¸ªà¸­à¸š\nhttps://drive.google.com/file/d/1VJ5hOtYBaqaftc2KGBRsojAwkdZ19Mnq/preview\nCode à¸—à¸”à¸ªà¸­à¸šà¹ƒà¸™ à¸§à¸´à¸”à¸µà¹‚à¸­\nhttps://drive.google.com/file/d/1sac48gQa7qIO_yTtOKBtCQOh-EmOEz3I/view?usp=sharing\n\n ```\n\n**Role**\n\n| **role** | **description** |\n| --- | --- |\n| admin | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¸œà¸¹à¹‰à¸”à¸¹à¹à¸¥à¸£à¸°à¸šà¸š |\n| administrative | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¸˜à¸¸à¸£à¸à¸²à¸£ |\n| external_agency | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¸«à¸™à¹ˆà¸§à¸¢à¸‡à¸²à¸™à¸ à¸²à¸¢à¸™à¸­à¸ |\n| head_officer | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¸«à¸±à¸§à¸«à¸™à¹‰à¸²à¸à¸¥à¸¸à¹ˆà¸¡ |\n| officer | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¹€à¸ˆà¹‰à¸²à¸«à¸™à¹‰à¸²à¸—à¸µà¹ˆ |\n| user | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¸œà¸¹à¹‰à¹ƒà¸Šà¹‰à¸‡à¸²à¸™ |\n| whip_commitee | Role à¸ªà¸³à¸«à¸£à¸±à¸šà¸„à¸“à¸°à¸à¸£à¸£à¸¡à¸à¸²à¸£à¸›à¸£à¸°à¸ªà¸²à¸™à¸‡à¸²à¸™à¸ªà¸ à¸²à¸œà¸¹à¹‰à¹à¸—à¸™à¸£à¸²à¸©à¸Žà¸£ (à¸§à¸´à¸›à¸£à¸±à¸à¸šà¸²à¸¥) |\n\n**JWT Token Playload**\n\n``` json\n{\n   \"firstname\":\"firstname\",\n   \"lastname\":\"lastname\",\n   \"user_id\":112,\n   \"system_id\":{\n      \"-99\":{\n         \"roles\":[\n            \"external_agency\",\n            \"head_officer\",\n            \"user\"\n         ]\n      }\n   },\n   \"avatar\":\"https://10.201.10.71:/IAM2Web/FileServlet?username=pmone13\",\n   \"exp\":172285026347,\n   \"iat\":1729497213,\n   \"redirect_url\":\"/\"\n}\n\n ```",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://{{base_url}}"
+      },
+      {
+        "url": "https://epcos.thaigov.go.th"
+      },
+      {
+        "url": "https://main.d30r9nwjcxfyu7.amplifyapp.com"
+      }
+    ],
+    "paths": {
+      "/single_sign_on": {
+        "post": {
+          "tags": [
+            "General"
+          ],
+          "summary": "API Check Token",
+          "description": "Token à¸—à¸µà¹ˆà¹ƒà¸Šà¹‰à¸—à¸”à¸ªà¸­à¸šà¹ƒà¸Šà¹‰ Token à¸—à¸µà¹ˆà¹„à¸”à¹‰à¸£à¸±à¸šà¸¡à¸²à¹€à¸¡à¸·à¹ˆà¸­à¸§à¸±à¸™à¸—à¸µà¹ˆ 07/08/2567\n\n```\neyJraWQiOiJpYW0yS2V5SUQiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmaXJzdG5hbWUiOiJwbW9uZTEzIiwidXNlcl9pZCI6MTEyLCJzeXN0ZW1faWQiOnsiLTk5Ijp7InJvbGVzIjpbInVzZXIiXX19LCJhdmF0YXIiOiJodHRwczovLzEwLjIwMS4xMC43MTovSUFNMldlYi9GaWxlU2VydmxldD91c2VybmFtZT1wbW9uZTEzIiwiZXhwIjoxNzIyODUwMjYzNDcsImxhc3RuYW1lIjoicG1vbmUxMyJ9.q0v5JoG4RmVBWAY8zxMPq92tautey3p_o6g36n2595STS1I4H3Rxv3uHb97rChAngLhMzwCc0OO7k-Q4H4NSik961HskEDyaOw5ZZbVvXjKP-eANJxESx7gK1AjPvAHu8FhXm291tuK_KN47iykJ4Pc0jUL9QV5qE9ImihBiPoCD7XRDp1t4gAmcQ8lAbkMH8gAwAjL8o7PCtoIJ7WpX8tV7eHhMzrlezeAp4ec4am3pXkbxMfl04A7F90iRfn6LF8f_-NHFKkA9-VZU5GXGWVW5kHyyRQZExOqTgjayrQWt-YuOhIQE2HSXP1WDkDrAdfIbOQ-BcXu0zf1xxgWbzg\n\n ```\n\n<img src=\"https://content.pstmn.io/7910b9f1-d06d-4503-886e-6015fabe7b6a/aW1hZ2UucG5n\" width=\"1231\" height=\"337\">\n\n### 1.à¹ƒà¸«à¹‰ FrontEnd à¸£à¸±à¸šà¸„à¹ˆà¸²à¸ˆà¸²à¸ URL Query Parameter \\`\\`token\\`\\`\n\n```\nhttps://epcos.thaigov.go.th/signin/external?token={{jwt_token}}\nhttps://main.d30r9nwjcxfyu7.amplifyapp.com/signin/external?token={{jwt_token}}\nhttps://epcos.thaigov.go.th/signin/internal?token={{jwt_token}}\nhttps://main.d30r9nwjcxfyu7.amplifyapp.com/signin/internal?token={{jwt_token}}\n\n ```\n\n### 2.à¸ˆà¸²à¸à¸™à¸±à¹‰à¸™à¹ƒà¸«à¹‰ FrontEnd à¸¢à¸´à¸‡ API à¸¡à¸²à¸¢à¸±à¸‡ API check token à¸—à¸µà¹ˆà¸£à¸°à¸šà¸šà¹ƒà¸™ Document à¸™à¸µà¹‰\n\n---\n\n### Error Code à¸¡à¸µà¸”à¸±à¸‡à¸•à¹ˆà¸­à¹„à¸›à¸™à¸µà¹‰\n\n``` json\nERROR_CODE = {\n    \"GSPM1001\": {\"errorCode\": \"GSPM1001\", \"errorMessage\": \"Token has expired\", \"code\": \"TOKEN_EXPIRED\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1002\": {\"errorCode\": \"GSPM1002\", \"errorMessage\": \"Token is missing\", \"code\": \"TOKEN_MISSING\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1003\": {\"errorCode\": \"GSPM1003\", \"errorMessage\": \"Invalid token\", \"code\": \"INVALID_TOKEN\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1004\": {\"errorCode\": \"GSPM1004\", \"errorMessage\": \"Unknown error\", \"code\": \"UNKNOWN_ERROR\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1005\": {\"errorCode\": \"GSPM1005\", \"errorMessage\": \"Type not supported\", \"code\": \"TYPE_NOT_SUPPORTED\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1006\": {\"errorCode\": \"GSPM1006\", \"errorMessage\": \"single sign on not success\", \"code\": \"SSO_ERROR\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1007\": {\"errorCode\": \"GSPM1007\", \"errorMessage\": \"EPCOS Api Key Invalid\", \"code\": \"INVALID_API_KEY_EPCOS\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n    \"GSPM1008\": {\"errorCode\": \"GSPM1008\", \"errorMessage\": \"map role not success\", \"code\": \"MAP_ROLE_ERROR\", \"statusCode\": 422, \"redirect_url\": \"/\"},\n}\n\n ```\n\n### 3\\. à¹€à¸¡à¸·à¹ˆà¸­à¸¡à¸µ Error Code à¹€à¸à¸´à¸”à¸‚à¸¶à¹‰à¸™à¹ƒà¸«à¹‰ FrontEnd à¹ƒà¸Šà¹‰ \\`\\`redirect_url\\`\\` à¸—à¸µà¹ˆà¸ªà¹ˆà¸‡à¹„à¸›à¹€à¸žà¸·à¹ˆà¸­à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¹€à¸ªà¹‰à¸™à¸—à¸²à¸‡à¹„à¸›à¸¢à¸±à¸‡ à¸«à¸™à¹‰à¸²à¹€à¸§à¹‡à¸šà¹„à¸Šà¸•à¹Œà¸—à¸µà¹ˆà¸à¸³à¸«à¸™à¸”",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "username": "",
+                    "password": "",
+                    "organization": "gov",
+                    "type": "token_pm1",
+                    "token": "{{jwt_token}}"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "headers": {
+                "Server": {
+                  "schema": {
+                    "type": "string",
+                    "example": "BaseHTTP/0.6 Python/3.11.0"
+                  }
+                },
+                "Date": {
+                  "schema": {
+                    "type": "string",
+                    "example": "Wed, 09 Oct 2024 09:31:26 GMT"
+                  }
+                },
+                "Content-Length": {
+                  "schema": {
+                    "type": "integer",
+                    "example": "2303"
+                  }
+                },
+                "Content-Type": {
+                  "schema": {
+                    "type": "string",
+                    "example": "application/json"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object"
+                  },
+                  "example": {
+                    "code": 200,
+                    "statusCode": 200,
+                    "data": {
+                      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwVV9ZcjVHRk5GT2lrWWExRFYySFVVWVI3bHpPTElKbTRXMHQ4SFNaRWxNIn0.eyJleHAiOjE3Mjg1NTI2ODYsImlhdCI6MTcyODQ2NjI4NiwianRpIjoiNmRhNDc5ZWItOWEyMC00MjJlLThiZWYtMWNiZjI4NjZlMDJmIiwiaXNzIjoiaHR0cDovLzE4LjEzNi4xNzAuMTY5OjgwODAvcmVhbG1zL2dvdiIsInN1YiI6IjZjZGQzOTg3LTBiZjktNGYyMC1iZWRjLWMwZTQ1ZTA1NDMxZSIsInR5cCI6IkJlYXJlciIsImF6cCI6InRlc3QtMDEiLCJzZXNzaW9uX3N0YXRlIjoiYzkxNmRkMWEtNTBjNC00NDc0LTlkNDgtNzFjNzc0Y2IzNDAyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIl9fcGVybWlzc2lvbi9QSjMvYWNjZXNzIixudWxsLCJfX3Blcm1pc3Npb24vUEozL2FnZW5kYSIsIl9fcm9sZS91c2VyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwic2NvcGUiOiJvZmZsaW5lX2FjY2VzcyIsInNpZCI6ImM5MTZkZDFhLTUwYzQtNDQ3NC05ZDQ4LTcxYzc3NGNiMzQwMiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJsYXN0X25hbWUiOiJwbW9uZTEzIiwiZ3JvdXBzIjpbXSwiY29nbml0bzp1c2VybmFtZSI6InNzb3Btb25lOjExMiIsInByZWZlcnJlZF91c2VybmFtZSI6InNzb3Btb25lOjExMiIsInRva2VuX3R5cGUiOiJrZXljbG9hayIsImxvY2FsZSI6IiIsImdpdmVuX25hbWUiOiJwbW9uZTEzIiwicGljdHVyZSI6IiIsInVzZXJfdHlwZSI6ImUtcGNvcyIsInBob25lX251bWJlciI6IiIsImRlcGFydG1lbnQiOiIiLCJmaXJzdF9uYW1lIjoicG1vbmUxMyJ9.QMPwt1KNZdcH16PPQ2LNtnMggkyDP6WrAjbdH4H3PaNsNIATbxJzlw7d7dOFeASiGmoa_YJhHGxt17yCcqjQDMBbc0VuS6bXz_swmkZArxc6rpK3GBzwSaMMIj8V7m3z7QH93aY4vRzXRCK3_qC7FepoEoys5Gm7TSoaw0rOJYDNX62V3uEatONaiipYYKVc--c0tCT7Hx28lVO0vXheU9QPlq3MPd15Jn3Vu6sj7zeRqPVp5rtLSRBjYjWFGPnPwliltEnKGWp2F_P3T-e1WQh68vXPloumZPwrMUfe9yy3XE_ys6Q09Jxe-wV1FUdXQtqHOefooBKr3dgYQiqeyw",
+                      "expires_in": 86400,
+                      "refresh_expires_in": 0,
+                      "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1MGM0ZmNhMy01ZDQxLTQ1ZTgtODZmOC05YmQzMWE0NWY4ODIifQ.eyJpYXQiOjE3Mjg0NjYyODYsImp0aSI6ImZmOTZkYTkwLWRiZTYtNGRmYS1hNmQ3LWIwZmY0NmI4MWIwYiIsImlzcyI6Imh0dHA6Ly8xOC4xMzYuMTcwLjE2OTo4MDgwL3JlYWxtcy9nb3YiLCJhdWQiOiJodHRwOi8vMTguMTM2LjE3MC4xNjk6ODA4MC9yZWFsbXMvZ292Iiwic3ViIjoiNmNkZDM5ODctMGJmOS00ZjIwLWJlZGMtYzBlNDVlMDU0MzFlIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6InRlc3QtMDEiLCJzZXNzaW9uX3N0YXRlIjoiYzkxNmRkMWEtNTBjNC00NDc0LTlkNDgtNzFjNzc0Y2IzNDAyIiwic2NvcGUiOiJvZmZsaW5lX2FjY2VzcyIsInNpZCI6ImM5MTZkZDFhLTUwYzQtNDQ3NC05ZDQ4LTcxYzc3NGNiMzQwMiJ9.9g_oPSv8oOz0PxI8_C5m-jZiwHZ89XxyzfoK2fJv-x8",
+                      "token_type": "Bearer",
+                      "not-before-policy": 0,
+                      "session_state": "c916dd1a-50c4-4474-9d48-71c774cb3402",
+                      "scope": "offline_access"
+                    }
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Content",
+              "headers": {
+                "Content-Type": {
+                  "schema": {
+                    "type": "string",
+                    "example": "application/json"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object"
+                  },
+                  "examples": {
+                    "example-0": {
+                      "summary": "GSPM1001|TOKEN_EXPIRED",
+                      "value": {
+                        "errorCode": "GSPM1001",
+                        "errorMessage": "Token has expired",
+                        "code": "TOKEN_EXPIRED",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    },
+                    "example-1": {
+                      "summary": "GSPM1002|TOKEN_MISSING",
+                      "value": {
+                        "errorCode": "GSPM1002",
+                        "errorMessage": "Token is missing",
+                        "code": "TOKEN_MISSING",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    },
+                    "example-2": {
+                      "summary": "GSPM1003|INVALID_TOKEN",
+                      "value": {
+                        "errorCode": "GSPM1003",
+                        "errorMessage": "Invalid token",
+                        "code": "INVALID_TOKEN",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    },
+                    "example-3": {
+                      "summary": "GSPM1004|UNKNOWN_ERROR",
+                      "value": {
+                        "errorCode": "GSPM1004",
+                        "errorMessage": "Unknown error",
+                        "code": "UNKNOWN_ERROR",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    },
+                    "example-4": {
+                      "summary": "GSPM1005|TYPE_NOT_SUPPORTED",
+                      "value": {
+                        "errorCode": "GSPM1005",
+                        "errorMessage": "Type not supported",
+                        "code": "TYPE_NOT_SUPPORTED",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    },
+                    "example-5": {
+                      "summary": "GSPM1006|SSO_ERROR",
+                      "value": {
+                        "errorCode": "GSPM1006",
+                        "errorMessage": "single sign on not success",
+                        "code": "SSO_ERROR",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    },
+                    "example-6": {
+                      "summary": "GSPM1007|INVALID_API_KEY_EPCOS",
+                      "value": {
+                        "errorCode": "GSPM1007",
+                        "errorMessage": "EPCOS Api Key Invalid",
+                        "code": "INVALID_API_KEY_EPCOS",
+                        "statusCode": 422,
+                        "redirect_url": "/"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "undefined": {
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "example": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "/signin/external": {
+        "get": {
+          "tags": [
+            "General"
+          ],
+          "summary": "FroneEnd External",
+          "parameters": [
+            {
+              "name": "token",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "example": "{{jwt_token}}"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {}
+              }
+            }
+          }
+        }
+      },
+      "/signin/internal": {
+        "get": {
+          "tags": [
+            "General"
+          ],
+          "summary": "FrontEnd Internal",
+          "parameters": [
+            {
+              "name": "token",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "example": "{{jwt_token}}"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
